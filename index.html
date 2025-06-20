@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Portfolio.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -14,6 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 
 </head>
 
@@ -23,7 +25,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#"> Rs.<span>Portfolio.</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -37,17 +39,20 @@
         </div>
     </nav>
 
-    <!-- home section start -->
+
+    <!-- Home Section Start -->
     <section class="home" id="home">
+        <div class="overlay"></div>
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, Myself</div>
-                <div class="text-2">Ravi Shankar</div>
-                <div class="text-3"> A <span class="typing"></span></div>
-
+                <div class="text-1">👋 Hello, Amazing People!</div>
+                <div class="text-2">Welcome</div>
+                <!-- <div class="text-3">I’m a <span class="typing"></span></div> -->
+                <a href="#about">Explore More</a>
             </div>
         </div>
     </section>
+
 
     <!-- about section start -->
     <section class="about" id="about">
@@ -55,18 +60,23 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="Images/profile-1.jpg" alt="">
+                    <img src="Images/profile-2.jpg" alt="">
                 </div>
                 <div class="column right">
-
-                    <p> <i class="fas fa-check-square"></i> Currently Working as <b><i>Database Administrator
-                        </b></i>@iBharat Software LLP.</p>
-                    <p> <i class="fas fa-check-square"></i> Also previously Freelance as <b><i> Subject Matter Expert
-                            </i></b> @Chegg Pvt Ltd.</p>
+                    <p class="intro-line">
+                        👋 Hi, I'm <strong>Ravi Shankar</strong> — a passionate IT professional with <strong>~4
+                            years</strong> of experience in the tech industry.
+                    </p>
                     <br>
-                    <p><b>For More Details Click On Resume Button.</b> </p>
-                    <a href="https://drive.google.com/file/d/1dDG-Vae8gOGIgAXYVZahGbVGXYTuwpf-/view?usp=drive_link"
-                        target="_blank"><i><b>Resume</b></i></a>
+                    <ul class="experience-list">
+                        <li><i class="fa-solid "></i> Currently working as DBA @Barcode India Ltd.</li>
+                        <li><i class="fa-solid "></i> Ex DBA @iBharat Software LLP.</li>
+                        <li><i class="fa-solid "></i> Ex Freelance as SME @Chegg Pvt Ltd.</li>
+                    </ul>
+
+                    <br>
+
+                    <a href="#" target="_blank"><i><b>Resume</b></i></a>
                 </div>
             </div>
         </div>
@@ -77,14 +87,23 @@
         <div class="max-width">
             <h2 class="title">My Education</h2>
             <div class="Edu-content">
-
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="text">M.tech</div>
+                        <a href="#" target="_blank">
+                            <p> J C Boss University, Haryana </p>
+                        </a>
+                    </div>
+                </div>
+                <br>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-graduation-cap"></i>
                         <div class="text">B.TECH</div>
                         <a href="https://drive.google.com/file/d/1iK9ys_TprdTS_hCV7Q3Yhz8uMLKix0pE/view?usp=sharing"
                             target="_blank">
-                            <p>Complete My B.TECH From <br><b>C.U.H, Mahendergarh</b> </p>
+                            <p>Central University, Haryana </p>
                         </a>
                     </div>
                 </div>
@@ -95,7 +114,7 @@
                         <div class="text">12th</div>
                         <a href="https://drive.google.com/file/d/1Y_tfK3aH71aA-rXnSGLXnM-pKZgeTMSc/view?usp=sharing"
                             target="_blank">
-                            <p>Complete my Intermediate from <br><b> HPS, Narnaul</b></p>
+                            <p>HPS, Narnaul</p>
                         </a>
                     </div>
                 </div>
@@ -108,51 +127,45 @@
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Roles & Responsibilities</h2>
-            <div class="skills-content">
-                <div class="column left">
-
-                    <p><i class="fas fa-check-square icon"></i> Design and Implement Database Backup, Restore & Disaster
-                        Recovery Strategy.</p>
-                    <p><i class="fas fa-check-square icon"></i> Implement and Maintain Log Shipping, Always On, and
-                        Distributed Always On.</p>
-                    <p><i class="fas fa-check-square icon"></i> SQL Server Setup, Installation, and Version Upgrades.
-                    </p>
-                    <p><i class="fas fa-check-square icon"></i> Design and Schedule Database Maintenance &
-                        Administrative Tasks.</p>
-                    <p><i class="fas fa-check-square icon"></i> Create Users & Assign Permissions Based on Access
-                        Levels, Control Access, and Manage Privileges.</p>
-                    <p><i class="fas fa-check-square icon"></i> Performance Tuning of Stored Procedures, Data
-                        Compression, Triggers, User-Defined Functions, and Inline SQL Scripts.</p>
-                    <p><i class="fas fa-check-square icon"></i> Monitor SQL Server Performance and Optimize Indexes to
-                        Improve Query Execution Time.</p>
-                    <p><i class="fas fa-check-square icon"></i> Troubleshoot and Resolve Database Connectivity,
-                        Deadlocks, and Blocking Issues.</p>
-                    <p><i class="fas fa-check-square icon"></i> Implement Database Partitioning and Archival Strategies
-                        for Performance Optimization.</p>
-                    <p><i class="fas fa-check-square icon"></i> Conduct Database Security Audits, Apply Patches, and
-                        Harden SQL Server Configurations.</p>
-                    <p><i class="fas fa-check-square icon"></i> Automate Routine Database Maintenance Tasks Using SQL
-                        Jobs and PowerShell Scripts.</p>
-                    <p><i class="fas fa-check-square icon"></i> Collaborate with Developers to Optimize SQL Queries and
-                        Ensure Efficient Database Design.</p>
-
-
-                </div>
-
-
+            <div class="skills-content fade-in-on-scroll">
+                <ul class="skills-list">
+                    <li><i class="fas fa-check-square icon"></i> Design and Implement Database Backup, Restore &
+                        Disaster Recovery Strategy.</li>
+                    <li><i class="fas fa-check-square icon"></i> Implement and Maintain Log Shipping, Always On, and
+                        Distributed Always On.</li>
+                    <li><i class="fas fa-check-square icon"></i> SQL Server Setup, Installation, and Version Upgrades.
+                    </li>
+                    <li><i class="fas fa-check-square icon"></i> Design and Schedule Database Maintenance &
+                        Administrative Tasks.</li>
+                    <li><i class="fas fa-check-square icon"></i> Create Users & Assign Permissions Based on Access
+                        Levels.</li>
+                    <li><i class="fas fa-check-square icon"></i> Performance Tuning of Stored Procedures, Triggers, and
+                        Inline SQL Scripts.</li>
+                    <li><i class="fas fa-check-square icon"></i> Monitor SQL Server Performance and Optimize Indexes.
+                    </li>
+                    <li><i class="fas fa-check-square icon"></i> Troubleshoot Database Connectivity, Deadlocks, and
+                        Blocking.</li>
+                    <li><i class="fas fa-check-square icon"></i> Implement Database Partitioning and Archival
+                        Strategies.</li>
+                    <li><i class="fas fa-check-square icon"></i> Conduct Security Audits and Harden SQL Server
+                        Configurations.</li>
+                    <li><i class="fas fa-check-square icon"></i> Automate Maintenance Tasks Using SQL Jobs and
+                        PowerShell.</li>
+                    <li><i class="fas fa-check-square icon"></i> Collaborate with Developers to Optimize SQL Queries and
+                        Design.</li>
+                </ul>
             </div>
         </div>
     </section>
 
 
+
     <!-- contact section start -->
-    <section class="contact" id="contact">
+    <section class="contact fade-in-section" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Contact Me</h2>
             <div class="contact-content">
                 <div class="column left">
-
-
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -165,7 +178,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Narnaul,Haryana(India)</div>
+                                <div class="sub-title">Narnaul, Haryana (India)</div>
                             </div>
                         </div>
                         <div class="row">
@@ -175,38 +188,35 @@
                                 <div class="sub-title">ravishankar.dba2021@gmail.com</div>
                             </div>
                         </div>
-
                         <div class="row">
-                            <i style="font-size:24px" class="fa">&#xf095;</i>
+                            <i class="fas fa-phone"></i>
                             <div class="info">
                                 <div class="head">Phone</div>
                                 <div class="sub-title">+91-8826582799</div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
-
                 <div class="column right">
-                    <div class="text">Message me</div>
+                    <div class="text">Message Me</div>
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Your Name" required />
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Your Email" required />
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" required />
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Write your message..." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
+                            <button type="submit">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -215,16 +225,27 @@
     </section>
 
     <!-- footer section start -->
-    <footer>
-        <div>
-            <a href="#" target="_blank"> <img src="Images/github.png" alt=""> </a>
-            <a href="https://www.linkedin.com/in/ravis24/" target="_blank"> <img src="Images/Linkedin.png" alt=""> </a>
-            <a href="#" target="_blank"> <img src="Images/Instagram.png" alt=""> </a>
-            <a href="#" c> <img src="Images/Twitter.png" alt=""> </a>
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ravis24/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
         </div>
-        <div> <span>Created By <a href="#">Ravi Shankar</a> | <span class="far fa-copyright"></span> 2021 All rights
-                reserved.</span></div>
-
+        <div class="footer-text">
+            <span>
+                Created by <a href="#">Ravi Shankar</a> |
+                <span class="far fa-copyright"></span> 2021 All rights reserved.
+            </span>
+        </div>
     </footer>
 
     <script src="script.js"></script>
